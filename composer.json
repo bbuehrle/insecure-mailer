@@ -12,10 +12,15 @@
     },
     "license": "MIT",
     "autoload": {
-        "psr-4": { "Symfony\\Component\\Mailer\\Bridge\\InsecureMailer\\": "src/" },
-	"exclude-from-classmap": [
+        "psr-4": {
+            "Symfony\\Component\\Mailer\\Bridge\\InsecureMailer\\": "src/"
+        },
+        "exclude-from-classmap": [
             "/Tests/"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": { "Symfony\\Component\\Mailer\\Bridge\\InsecureMailer\\Tests\\": "tests/" }
     },
     "authors": [
         {
